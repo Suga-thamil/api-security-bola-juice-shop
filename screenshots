@@ -79,5 +79,4 @@ A DELETE request was issued against another user's basket item. The request was 
 ![Verification](screenshots/verification.png)
 
 **Description:**
-Subsequent requests confirmed that the modifications were applied successfully, proving that an attacker could alter another user's basket contents.
 Subsequent API requests confirmed that unauthorized modifications were successfully applied to the target basket. This demonstrates that an attacker can manipulate resources belonging to other users without proper authorization checks.
