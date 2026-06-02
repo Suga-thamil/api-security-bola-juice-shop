@@ -1,0 +1,80 @@
+## Screenshots
+
+### 1. Accessing Basket ID 1
+
+![Basket 1](screenshots/basket_1.png)
+
+**Description:**
+The authenticated user successfully accessed Basket ID 1 through the API endpoint `/rest/basket/1`. The response returned basket details and product information.
+
+---
+
+### 2. Accessing Basket ID 2
+
+![Basket 2](screenshots/basket_2.png)
+
+**Description:**
+The basket identifier was modified from `1` to `2`. The application returned another user's basket information without performing ownership validation.
+
+---
+
+### 3. Accessing Basket ID 3
+
+![Basket 3](screenshots/basket_3.png)
+
+**Description:**
+Further enumeration of basket identifiers confirmed that multiple baskets could be accessed by changing the object ID in the request.
+
+---
+
+### 4. Accessing Basket ID 4
+
+![Basket 4](screenshots/basket_4.png)
+
+**Description:**
+The API returned basket data for Basket ID 4, demonstrating the absence of proper authorization checks.
+
+---
+
+### 5. Accessing Basket ID 5
+
+![Basket 5](screenshots/basket_5.png)
+
+**Description:**
+The application continued to expose basket information belonging to different users when sequential basket IDs were requested.
+
+---
+
+### 6. Accessing Basket ID 6
+
+![Basket 6](screenshots/basket_6.png)
+
+**Description:**
+Access to Basket ID 6 was successful, confirming that the vulnerability affected multiple resources and was not limited to a single basket.
+
+---
+
+### 7. Adding an Item to Another User's Basket
+
+![Add Item](screenshots/add_item.png)
+
+**Description:**
+A POST request was modified to target another user's basket. The application accepted the request and added the selected product, demonstrating unauthorized modification of resources.
+
+---
+
+### 8. Deleting an Item from Another User's Basket
+
+![Delete Item](screenshots/delete_item.png)
+
+**Description:**
+A DELETE request was issued against another user's basket item. The request was processed successfully, resulting in unauthorized removal of products from the basket.
+
+---
+
+### 9. Verification of Impact
+
+![Verification](screenshots/verification.png)
+
+**Description:**
+Subsequent requests confirmed that the modifications were applied successfully, proving that an attacker could alter another user's basket contents.
