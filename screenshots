@@ -1,6 +1,8 @@
 ## Screenshots
 
-### 1. Accessing Basket ID 1
+The following screenshots provide evidence of the testing process used to validate the Broken Object Level Authorization (BOLA) vulnerability. The assessment demonstrates unauthorized access to multiple basket resources through object identifier manipulation and confirms the ability to modify resources belonging to other users.
+
+### 1. Legitimate Access to Basket ID 1
 
 ![Basket 1](screenshots/basket_1.png)
 
