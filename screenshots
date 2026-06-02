@@ -7,7 +7,7 @@ The following screenshots provide evidence of the testing process used to valida
 ![Basket 1](screenshots/basket_1.png)
 
 **Description:**
-The authenticated user successfully accessed Basket ID 1 through the API endpoint `/rest/basket/1`. The response returned basket details and product information.
+The authenticated user accessed Basket ID 1 through the API endpoint `/rest/basket/1`. The response returned basket details and associated product information, establishing a baseline for subsequent authorization testing.
 
 ---
 
